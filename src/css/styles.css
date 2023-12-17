@@ -1,0 +1,35 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./base/reset.css');
+@import url('./base/fonts.css');
+@import url('./base/container.css');
+@import url('./base/variables.css');
+@import url('./base/common.css');
+@import url('./animation/shake.css');
+@import url('./animation/grow.css');
+@import url('./animation/appear.css');
+@import url('./base/page.css');
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/exercises.css');
+@import url('./layout/footer.css');
+@import url('./layout/favorites.css');
+@import url('./components/aside.css');
+@import url('./components/favorite-aside.css');
+@import url('./components/exercise-card.css');
+@import url('./components/gallery.css');
+@import url('./components/socials.css');
+@import url('./components/subfilter-card.css');
+@import url('./components/subscribe-form.css');
+@import url('./components/search-form.css');
+@import url('./components/pagination.css');
+@import url('./components/mobile-menu.css');
+@import url('./components/rating-modal.css');
+@import url('./components/exercise-modal.css');
+@import url('./components/policy-modal.css');
+@import url('./components/scroll-top.css');
+@import url('./components/loader.css');

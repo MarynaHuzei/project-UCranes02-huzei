@@ -1,0 +1,125 @@
+.header {
+  padding-top: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  width: 132px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  width: 132px;
+  height: 24px;
+  stroke: var(--black);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: none;
+}
+
+.mobile-menu-open-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.mobile-menu-open-btn-icon {
+  width: 32px;
+  height: 32px;
+  stroke: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-btn {
+    display: none;
+    visibility: hidden;
+  }
+
+  .header {
+    padding-top: 24px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 233px;
+    height: 52px;
+    border-radius: 60px;
+    background-color: var(--black);
+    color: white;
+    margin-left: 103px;
+  }
+
+  .nav-item {
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .nav-home, .nav-favorites {
+    border-radius: 30px;
+  }
+
+  .home-page .nav-home,
+  .favorites-page .nav-favorites {
+    background-color: var(--white);
+    color: var(--black);
+    flex-shrink: 0;
+    transition: background-color,color  var(--transition-timing);
+  }
+
+  .home-page .nav-favorites:hover,
+  .home-page .nav-favorites:focus {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  .favorites-page .nav-home:hover,
+  .favorites-page .nav-home:focus {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-menu-open-btn {
+    display: none;
+    visibility: hidden;
+  }
+
+  .header {
+    padding-top: 28px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 265px;
+    margin-left: 423px;
+  }
+}
+
+.nav-link {
+  padding: 6px 12px;
+  display: block;
+}

@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--black-transparent-10);
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1440px) {
+  *::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
